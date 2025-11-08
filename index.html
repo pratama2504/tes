@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SMP Muhammadiyah Buntok — Beranda</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* Warna khas Muhammadiyah */
+    .bg-primary-muh {
+      background-color: #0056b3 !important;
+    }
+    .text-primary-muh {
+      color: #0056b3 !important;
+    }
+    .btn-primary-muh {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+    }
+    .btn-primary-muh:hover {
+      background-color: #0056b3;
+      border-color: #004999;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .navbar-brand img {
+      width: 40px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-muh shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+        <img src="assets/img/logo.png" alt="logo"> SMP Muhammadiyah Buntok
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link text-white active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="kontak.html">Kontak</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm ms-3 text-white border-0 bg-transparent">
+              🌙
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section" style="margin-top: 60px; background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('assets/img/hero-bg.jpg') center center / cover no-repeat;">
+    <div class="container text-white py-5">
+      <div class="row align-items-center">
+        <div class="col-md-7" data-aos="fade-right">
+          <h1 class="display-5 fw-bold">Membangun Generasi Cerdas, Berakhlak, dan Berdaya Saing</h1>
+          <p class="lead mt-3">SMP Muhammadiyah Buntok berkomitmen mencetak siswa beriman, berilmu, dan berprestasi dengan semangat Islam dan kemajuan.</p>
+          <a href="tentang.html" class="btn btn-primary-muh btn-lg rounded-pill mt-3">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="col-md-5 d-none d-md-block" data-aos="fade-left">
+          <div class="hero-card bg-white rounded-4 shadow p-4 text-dark">
+            <h5 class="mb-2 fw-bold text-primary-muh">Pendaftaran Siswa Baru 2025/2026</h5>
+            <p class="mb-3">Informasi pendaftaran, biaya, dan jalur penerimaan dapat dilihat pada halaman Program.</p>
+            <a href="program.html" class="btn btn-primary-muh w-100">Lihat Program</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTICS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3" data-aos="fade-up">
+          <h3 class="fw-bold text-primary-muh">350+</h3>
+          <p>Siswa Aktif</p>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="fw-bold text-primary-muh">30</h3>
+          <p>Guru & Staf</p>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="fw-bold text-primary-muh">15+</h3>
+          <p>Prestasi Akademik</p>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="fw-bold text-primary-muh">100%</h3>
+          <p>Lulusan Melanjutkan Sekolah</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM HIGHLIGHT -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 text-primary-muh" data-aos="fade-up">Program Unggulan</h2>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card p-4 border-0 shadow-sm h-100">
+            <h5 class="fw-bold text-primary-muh">Program Akademik</h5>
+            <p class="mb-2">Pembelajaran sesuai Kurikulum Merdeka dengan pendekatan aktif dan inovatif.</p>
+            <a class="stretched-link" href="program.html#akademik">Selengkapnya →</a>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card p-4 border-0 shadow-sm h-100">
+            <h5 class="fw-bold text-primary-muh">Program Keislaman</h5>
+            <p class="mb-2">Kegiatan rutin seperti Tahfidz, Tadarus, dan Kajian Muhammadiyah untuk membentuk karakter Islami.</p>
+            <a class="stretched-link" href="program.html#keislaman">Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1 fw-semibold text-primary-muh">© 2025 SMP Muhammadiyah Buntok</p>
+      <small>Jl. Pelita Raya No.41, Buntok, Kalimantan Tengah — Telp: (0525) 22151 — Email: smpmuhammadiyahbtk@gmail.com</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  const toggleBtn = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  // Set tema awal
+  if (currentTheme === 'dark') {
+    document.documentElement.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleBtn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+</body>
+</html>

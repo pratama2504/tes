@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak — SMP Muhammadiyah Buntok</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .text-primary-muh { color: #0056b3 !important; }
+    .btn-primary-muh {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+    }
+    .btn-primary-muh:hover {
+      background-color: #0056b3;
+      border-color: #004999;
+    }
+    .navbar-brand img {
+      width: 40px;
+      margin-right: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+        <img src="assets/img/logo.png" alt="logo"> SMP Muhammadiyah Buntok
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#nav5">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav5" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link text-white active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="kontak.html">Kontak</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm ms-3 text-white border-0 bg-transparent">
+              🌙
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="py-5" style="margin-top: 70px;">
+    <div class="container">
+      <header class="mb-4 text-center" data-aos="fade-up">
+        <h2 class="fw-bold text-primary-muh">Hubungi Kami</h2>
+        <p class="text-muted">Kami siap membantu memberikan informasi seputar pendaftaran dan kegiatan sekolah.</p>
+      </header>
+
+      <div class="row g-4">
+        <!-- INFORMASI KONTAK -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="card p-4 border-0 shadow-sm">
+            <h5 class="fw-bold text-primary-muh">Informasi Sekolah</h5>
+            <p class="mb-1"><strong>Alamat:</strong></p>
+            <p>Jl. Pelita Raya No.41, Buntok Kota, Kec. Dusun Selatan,<br>Kab. Barito Selatan, Kalimantan Tengah 73751</p>
+            <p><strong>Telepon:</strong> (0525) 22151</p>
+            <p><strong>Email:</strong> smpmuhammadiyahbtk@gmail.com</p>
+            <hr>
+            <h6 class="fw-bold text-primary-muh">Jam Operasional</h6>
+            <p class="mb-1">Senin – Jumat: 07.30 – 15.00</p>
+            <p>Sabtu – Minggu: Libur</p>
+          </div>
+
+          <!-- PETA -->
+          <div class="mt-4" data-aos="fade-up">
+            <h6 class="fw-bold text-primary-muh mb-2">Lokasi Kami</h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0071298628395!2d114.83526057472538!3d-1.7264720982575852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfb016e8ec9926b%3A0x6d91b77f81fddd0c!2sSMP%20Muhammadiyah%20Buntok!5e0!3m2!1sid!2sid!4v1762589815955!5m2!1sid!2sid"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- FORM KONTAK -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="card p-4 border-0 shadow-sm">
+            <h5 class="fw-bold text-primary-muh">Kirim Pesan</h5>
+            <p class="text-muted">Isi formulir di bawah ini untuk menghubungi kami secara langsung.</p>
+            <form id="contactForm" action="https://formspree.io/f/xldarjrw" method="POST">
+              <!-- Anti-spam (honeypot) -->
+              <input type="text" name="_honey" style="display:none">
+
+              <!-- Subjek email -->
+              <input type="hidden" name="_subject" value="Pesan dari situs SMP Muhammadiyah Buntok">
+
+              <!-- Nama -->
+              <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" name="nama" class="form-control" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Masukkan email aktif" required>
+              </div>
+
+              <!-- Pesan -->
+              <div class="mb-3">
+                <label class="form-label">Pesan</label>
+                <textarea name="pesan" rows="5" class="form-control" placeholder="Tulis pesan Anda..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary-muh w-100">Kirim Pesan</button>
+
+              <!-- Pesan feedback -->
+              <div id="formMessage" class="mt-3" style="display:none;"></div>
+            </form>
+            <small class="text-muted d-block mt-2">Formulir ini menggunakan layanan Formspree — tidak memerlukan backend.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1 fw-semibold text-primary-muh">© 2025 SMP Muhammadiyah Buntok</p>
+      <small>Jl. Pelita Raya No.41, Buntok, Kalimantan Tengah — Telp: (0525) 22151 — Email: smpmuhammadiyahbtk@gmail.com</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  const toggleBtn = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  // Set tema awal
+  if (currentTheme === 'dark') {
+    document.documentElement.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleBtn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+  </script>
+  <script>
+const form = document.getElementById('contactForm');
+const msg = document.getElementById('formMessage');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // cegah reload
+  msg.style.display = 'none';
+
+  const data = new FormData(form);
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      msg.style.display = 'block';
+      msg.className = 'alert alert-success';
+      msg.textContent = '✅ Terima kasih! Pesan Anda telah berhasil dikirim.';
+      form.reset();
+    } else {
+      const result = await res.json();
+      msg.style.display = 'block';
+      msg.className = 'alert alert-danger';
+      msg.textContent = result.error || '⚠️ Terjadi kesalahan saat mengirim, coba lagi.';
+    }
+  } catch (err) {
+    msg.style.display = 'block';
+    msg.className = 'alert alert-danger';
+    msg.textContent = '🚫 Gagal menghubungi server. Periksa koneksi internet Anda.';
+  }
+});
+</script>
+
+</body>
+</html>
