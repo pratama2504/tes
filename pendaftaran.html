@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PPDB - SMP Muhammadiyah Buntok</title>
+<link rel="icon" href="assets/img/logo.png">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.loader {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #dee2e6;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="assets/img/logo.png" width="40" class="me-2"> SMP Muhammadiyah Buntok
+    </a>
+  </div>
+</nav>
+
+<div class="container my-5 pt-5">
+<div class="card shadow border-0">
+<div class="card-body p-4 p-md-5">
+
+<div class="text-center border-bottom pb-3 mb-4">
+  <h3 class="fw-bold text-primary">FORMULIR PENDAFTARAN PESERTA DIDIK BARU</h3>
+  <p class="text-muted">Tahun Pelajaran 2025 / 2026</p>
+</div>
+
+<form id="form-ppdb">
+
+<!-- DATA SISWA -->
+<div class="card mb-4">
+<div class="card-header bg-primary text-white fw-semibold">I. DATA PRIBADI SISWA</div>
+<div class="card-body">
+<div class="row g-3">
+
+<div class="col-md-6">
+<label class="form-label">Nomor Pendaftaran</label>
+<input type="text" name="no_reg" class="form-control bg-light">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Nama Lengkap *</label>
+<input type="text" name="nama" class="form-control text-uppercase" required>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Jenis Kelamin</label>
+<select name="jk" class="form-select">
+<option>Laki-laki</option>
+<option>Perempuan</option>
+</select>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">NISN *</label>
+<input type="number" name="nisn" class="form-control" required>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Tempat Lahir</label>
+<input type="text" name="tmp_lahir" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Tanggal Lahir</label>
+<input type="date" name="tgl_lahir" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">NIK</label>
+<input type="number" name="nik" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Agama</label>
+<select name="agama" class="form-select">
+<option>Islam</option>
+<option>Kristen</option>
+<option>Katolik</option>
+<option>Hindu</option>
+<option>Budha</option>
+</select>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ALAMAT -->
+<div class="card mb-4">
+<div class="card-header bg-secondary text-white fw-semibold">ALAMAT & KONTAK</div>
+<div class="card-body">
+<div class="row g-3">
+
+<div class="col-12">
+<label class="form-label">Alamat Lengkap</label>
+<input type="text" name="alamat" class="form-control">
+</div>
+
+<div class="col-md-4">
+<label class="form-label">RT</label>
+<input type="text" name="rt" class="form-control">
+</div>
+
+<div class="col-md-4">
+<label class="form-label">RW</label>
+<input type="text" name="rw" class="form-control">
+</div>
+
+<div class="col-md-4">
+<label class="form-label">Kode Pos</label>
+<input type="text" name="kodepos" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Kelurahan</label>
+<input type="text" name="kelurahan" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Kecamatan</label>
+<input type="text" name="kecamatan" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">No. HP / WhatsApp</label>
+<input type="text" name="telepon" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Transportasi</label>
+<input type="text" name="transport" class="form-control">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ORANG TUA -->
+<div class="card mb-4">
+<div class="card-header bg-success text-white fw-semibold">II. DATA ORANG TUA / WALI</div>
+<div class="card-body">
+<div class="row g-4">
+
+<div class="col-md-6">
+<h6 class="fw-bold text-success">DATA AYAH</h6>
+<input type="text" name="nama_ayah" class="form-control mb-2" placeholder="Nama Ayah">
+<input type="text" name="tmp_tgl_lahir_ayah" class="form-control mb-2" placeholder="Tempat, Tgl Lahir">
+<input type="text" name="pekerjaan_ayah" class="form-control mb-2" placeholder="Pekerjaan">
+<select name="penghasilan_ayah" class="form-select">
+<option selected disabled>Penghasilan</option>
+<option>< 1 Juta</option>
+<option>1 - 3 Juta</option>
+<option>> 3 Juta</option>
+</select>
+</div>
+
+<div class="col-md-6">
+<h6 class="fw-bold text-danger">DATA IBU</h6>
+<input type="text" name="nama_ibu" class="form-control mb-2" placeholder="Nama Ibu">
+<input type="text" name="tmp_tgl_lahir_ibu" class="form-control mb-2" placeholder="Tempat, Tgl Lahir">
+<input type="text" name="pekerjaan_ibu" class="form-control mb-2" placeholder="Pekerjaan">
+<select name="penghasilan_ibu" class="form-select">
+<option selected disabled>Penghasilan</option>
+<option>< 1 Juta</option>
+<option>1 - 3 Juta</option>
+<option>> 3 Juta</option>
+</select>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- PERIODIK -->
+<div class="card mb-4">
+<div class="card-header bg-warning fw-semibold">III. DATA PERIODIK & PRESTASI</div>
+<div class="card-body">
+<div class="row g-3">
+
+<div class="col-md-3">
+<label class="form-label">Tinggi (cm)</label>
+<input type="number" name="tinggi" class="form-control">
+</div>
+
+<div class="col-md-3">
+<label class="form-label">Berat (kg)</label>
+<input type="number" name="berat" class="form-control">
+</div>
+
+<div class="col-md-3">
+<label class="form-label">Jumlah Saudara</label>
+<input type="number" name="jumlah_saudara" class="form-control">
+</div>
+
+<div class="col-md-3">
+<label class="form-label">Jarak (km)</label>
+<input type="text" name="jarak" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Prestasi</label>
+<input type="text" name="prestasi_yang_pernah_diraih" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Kegiatan Luar Sekolah</label>
+<input type="text" name="kegiatan_diluar_sekolah" class="form-control">
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="d-grid">
+<button id="submit-btn" class="btn btn-primary btn-lg">
+<span id="btn-text">KIRIM PENDAFTARAN</span>
+<span id="loader" class="loader ms-2 d-none"></span>
+</button>
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const scriptURL = 'PASTE_SCRIPT_GAS_KAMU';
+const form = document.getElementById('form-ppdb');
+const btn = document.getElementById('submit-btn');
+const loader = document.getElementById('loader');
+const btnText = document.getElementById('btn-text');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  btn.disabled = true;
+  btnText.textContent = 'Mengirim...';
+  loader.classList.remove('d-none');
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(() => {
+      alert('Pendaftaran berhasil dikirim!');
+      form.reset();
+    })
+    .catch(err => alert(err))
+    .finally(() => {
+      btn.disabled = false;
+      btnText.textContent = 'KIRIM PENDAFTARAN';
+      loader.classList.add('d-none');
+    });
+});
+</script>
+
+</body>
+</html>
